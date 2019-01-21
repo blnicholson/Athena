@@ -123,7 +123,7 @@ class Site extends Component {
           </div>
         </div>
   
-        <div className="containerAbout">
+        <div id="aboutSection" className="containerAbout">
           <div className="section">
             <div className="row">
               <div className="col s12 center">
