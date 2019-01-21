@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const routes = require('./routes');
 const app = express();
 const PORT = process.env.PORT || 3001;
-const env = require('dotenv').load();
+//const env = require('dotenv').load();
 const cors = require('cors');
 
 app.use(logger('dev'));
