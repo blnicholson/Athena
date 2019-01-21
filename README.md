@@ -3,9 +3,8 @@
 </p>
 
 ## Overview
-
-
-
+---
+Athena is a Full M.E.R.N Stack Application for Training Managment.
 
 ### Crafted With
 ---
