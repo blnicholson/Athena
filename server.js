@@ -1,5 +1,5 @@
 const express = require('express');
- const favicon = require('serve-favicon');
+ //const favicon = require('serve-favicon');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 const routes = require('./routes');
