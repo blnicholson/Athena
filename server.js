@@ -23,6 +23,6 @@ app.use(routes);
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/athena_testDB', { useNewUrlParser: true }).then(() => console.log('Mongoose connected...'));
 
-app.listen(PORT, function() {
+app.listen(process.env.PORT || 3001, function() {
 	console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
