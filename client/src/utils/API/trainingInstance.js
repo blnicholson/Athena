@@ -2,15 +2,15 @@ import axios from 'axios';
 
 export default {
 	getTrainingInstances: (params = {}) => {
-		return axios.get('/api/traininginstances', { params });
+		return axios.get('/API/traininginstances', { params });
 	},
 	create: trainingInstance => {
-		return axios.post('/api/traininginstances', trainingInstance);
+		return axios.post('/API/traininginstances', trainingInstance);
 	},
 	update: (trainingInstance) => {
-		return axios.put('/api/traininginstances/' + trainingInstance._id, trainingInstance);
+		return axios.put('/API/traininginstances/' + trainingInstance._id, trainingInstance);
 	},
 	addDocument: (id, document) => {
-		return axios.put('/api/traininginstances/' + id, { $push: { documents: document }});
+		return axios.put('/API/traininginstances/' + id, { $push: { documents: document }});
 	}
 };
