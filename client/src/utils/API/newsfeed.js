@@ -2,12 +2,12 @@ import axios from 'axios';
 
 export default {
 	getNewsfeedItems: (params = {}) => {
-		return axios.get('/API/newsfeed', { params });
+		return axios.get('/api/newsfeed', { params });
 	},
 	create: newsfeedItem => {
-		return axios.post('/API/newsfeed', newsfeedItem);
+		return axios.post('/api/newsfeed', newsfeedItem);
 	},
 	insertMany: newsfeedItems => {
-		return axios.post('/API/newsfeed/_bulk', newsfeedItems);
+		return axios.post('/api/newsfeed/_bulk', newsfeedItems);
 	}
 };
